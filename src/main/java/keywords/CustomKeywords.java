@@ -1,7 +1,13 @@
+package keywords;
+
 import edu.jsu.mcis.*;
 
-public class HelloWorldKeywords {
-    private HelloWorld helloWorld = new HelloWorld();
+public class CustomKeywords {
+    private HelloWorld helloWorld;
+    
+    public CustomKeywords() {
+        helloWorld = new HelloWorld();
+    }
     
     public String greetEveryone() {
         return helloWorld.showIt();
@@ -10,5 +16,4 @@ public class HelloWorldKeywords {
     public String reverseGreetEveryone() {
         return helloWorld.reverseIt();
     }
-    
 }
